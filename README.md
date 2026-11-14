@@ -42,16 +42,10 @@ konsooliprotsessi: lisamist, osalist otsingut, koguste muutmist, täpset koguvä
 vigast sisendit ja sisendi lõppu. Lahendus kompileeriti JDK 27-ga Java 17 sihtversioonile
 ning mõlemad testikomplektid läbisid edukalt.
 
-- [Brauseris esitatav lühisalvestus](docs/kaivitustoend.html): ava fail ja vajuta „Esita algusest”.
-- [Asciicast-terminalisalvestus](docs/kaivitustoend.cast): standardne asciicast v2 fail.
-- [Salvestuse tekst](docs/kaivitustoend.txt): sama terminaliseansi loetav väljund.
+Käivitustõend näitab kohukese lisamist (20 tk hinnaga 1,00 EUR),
+Piima otsimist ja lao koguväärtust 109,00 EUR.
 
-Salvestusel kuvatakse algtooted ning lisatakse Kõlar hinnaga 25,50 EUR,
-kogusega 2 ja garantiiga 24 kuud. Otsing `kõl` leiab lisatud toote.
-Algväärtus on `10 × 1,25 + 8 × 2,10 + 3 × 19,90 = 89,00 EUR`.
-Pärast lisamist on koguväärtus `140,00 EUR` ning ühe kõlari eemaldamisel `114,50 EUR`.
-Salvestus pärineb päris Java protsessist, mille sisend ja väljund liikusid pseudoterminalis.
-Selle saab uuesti luua käsuga `python3 docs/record_demo.py` macOS-is või Linuxis.
+![Rakenduse töötamine: toote lisamine, otsing ja koguväärtus](docs/kaivitustoend.png)
 
 ## Failid
 
