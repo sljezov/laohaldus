@@ -66,17 +66,3 @@ Selle saab uuesti luua käsuga `python3 docs/record_demo.py` macOS-is või Linux
 | [Lahenduse selgitus](docs/selgitus.md) | Tööpäevik, OOP näited, andmestruktuur ja nõuete vastavus |
 | [Commit'ide loetelu](docs/commitid.md) | Sisulised arendusetapid ja Git-ajalugu |
 
-## Git-ajalugu
-
-Projekt on tavaline Git-repositoorium. Kogu commit-ajalugu asub `.git`-kataloogis:
-
-```sh
-git log --oneline
-```
-
-GitHubi üleslaadimiseks loo tühi repositoorium ja lisa selle aadress:
-
-```sh
-git remote add origin https://github.com/SINU-KASUTAJA/laohaldus.git
-git push -u origin main
-```
