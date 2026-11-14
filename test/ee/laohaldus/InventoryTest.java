@@ -10,7 +10,7 @@ public class InventoryTest {
         Product milk = new FoodProduct("Piim", new BigDecimal("1.25"), 10,
                 LocalDate.of(2027, 1, 1));
         inventory.addProduct(milk);
-        inventory.addProduct(new ElectronicProduct("Hiir", new BigDecimal("19.90"), 2, 24));
+        inventory.addProduct(new ElectronicProduct("Klaviatuur", new BigDecimal("19.90"), 2, 24));
         check(inventory.getTotalValue().equals(new BigDecimal("52.30")), "Täpne koguväärtus");
         check(inventory.searchByName(" PI ").equals(java.util.List.of(milk)), "Osaline otsing");
         check(inventory.searchByName("puuduv").isEmpty(), "Puuduv vaste");

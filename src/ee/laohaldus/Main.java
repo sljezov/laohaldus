@@ -16,7 +16,7 @@ public class Main {
                 LocalDate.now().plusDays(7)));
         inventory.addProduct(new FoodProduct("Leib", new BigDecimal("2.10"), 8,
                 LocalDate.now().plusDays(5)));
-        inventory.addProduct(new ElectronicProduct("Hiir", new BigDecimal("19.90"), 3, 24));
+        inventory.addProduct(new ElectronicProduct("Klaviatuur", new BigDecimal("19.90"), 3, 24));
     }
 
     public static void main(String[] args) {

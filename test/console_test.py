@@ -10,14 +10,14 @@ def run(lines):
     ).stdout
 
 
-output = run("1\n2\n2\nKlaviatuur\n25,50\n2\n24\n4\nKLAV\n5\n"
-             "3\nKlaviatuur\n-1\n5\n3\nKlaviatuur\n-9\n"
-             "3\nKlaviatuur\n3\n5\n0\n")
-for expected in ["Piim", "Leib", "Hiir", "Toode lisatud: Klaviatuur",
+output = run("1\n2\n2\nKõlar\n25,50\n2\n24\n4\nKÕL\n5\n"
+             "3\nKõlar\n-1\n5\n3\nKõlar\n-9\n"
+             "3\nKõlar\n3\n5\n0\n")
+for expected in ["Piim", "Leib", "Klaviatuur", "Toode lisatud: Kõlar",
                  "Lao koguväärtus: 140.00 EUR", "Lao koguväärtus: 114.50 EUR",
                  "Viga: Uus kogus", "Lao koguväärtus: 191.00 EUR", "Head aega!"]:
     assert expected in output, expected
-assert output.count("Klaviatuur | hind: 25.50 EUR | kogus: 2") == 2
+assert output.count("Kõlar | hind: 25.50 EUR | kogus: 2") == 2
 errors = run("x\n2\n9\n2\n1\nÕun\nviga\n2\n1\nÕun\n1.001\n1\n2027-01-01\n"
              "2\n1\nÕun\n1\n1\n2027-02-30\n4\n\n5\n0\n")
 assert "Tundmatu valik" in errors

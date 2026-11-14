@@ -2,7 +2,7 @@
 
 Java konsoolirakendus, millega saab kuvada kõiki tooteid, lisada tooteid,
 muuta laokoguseid, otsida nime järgi ja arvutada lao koguväärtust.
-Rakendus käivitub kolme tootega: Piim, Leib ja Hiir.
+Rakendus käivitub kolme tootega: Piim, Leib ja Klaviatuur.
 
 ## Käivitamine
 
@@ -46,10 +46,10 @@ ning mõlemad testikomplektid läbisid edukalt.
 - [Asciicast-terminalisalvestus](docs/kaivitustoend.cast): standardne asciicast v2 fail.
 - [Salvestuse tekst](docs/kaivitustoend.txt): sama terminaliseansi loetav väljund.
 
-Salvestusel kuvatakse algtooted ning lisatakse Klaviatuur hinnaga 25,50 EUR,
-kogusega 2 ja garantiiga 24 kuud. Otsing `klav` leiab lisatud toote.
+Salvestusel kuvatakse algtooted ning lisatakse Kõlar hinnaga 25,50 EUR,
+kogusega 2 ja garantiiga 24 kuud. Otsing `kõl` leiab lisatud toote.
 Algväärtus on `10 × 1,25 + 8 × 2,10 + 3 × 19,90 = 89,00 EUR`.
-Pärast lisamist on koguväärtus `140,00 EUR` ning ühe klaviatuuri eemaldamisel `114,50 EUR`.
+Pärast lisamist on koguväärtus `140,00 EUR` ning ühe kõlari eemaldamisel `114,50 EUR`.
 Salvestus pärineb päris Java protsessist, mille sisend ja väljund liikusid pseudoterminalis.
 Selle saab uuesti luua käsuga `python3 docs/record_demo.py` macOS-is või Linuxis.
 
@@ -65,4 +65,3 @@ Selle saab uuesti luua käsuga `python3 docs/record_demo.py` macOS-is või Linux
 | `test/` | Laoloogika ja konsooli testid |
 | [Lahenduse selgitus](docs/selgitus.md) | Tööpäevik, OOP näited, andmestruktuur ja nõuete vastavus |
 | [Commit'ide loetelu](docs/commitid.md) | Sisulised arendusetapid ja Git-ajalugu |
-

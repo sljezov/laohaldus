@@ -37,8 +37,8 @@ def collect(seconds):
 
 
 collect(0.7)
-for line in ["1", "2", "2", "Klaviatuur", "25,50", "2", "24", "4", "klav", "5",
-             "3", "Klaviatuur", "-1", "5", "0"]:
+for line in ["1", "2", "2", "Kõlar", "25,50", "2", "24", "4", "kõl", "5",
+             "3", "Kõlar", "-1", "5", "0"]:
     os.write(master, (line + "\n").encode("utf-8"))
     collect(0.35)
 collect(0.2)
@@ -46,7 +46,7 @@ process.wait(timeout=5)
 os.close(master)
 assert process.returncode == 0
 transcript = "".join(event[2] for event in events)
-for expected in ["Toode lisatud: Klaviatuur", "Lao koguväärtus: 140.00 EUR",
+for expected in ["Toode lisatud: Kõlar", "Lao koguväärtus: 140.00 EUR",
                  "Lao koguväärtus: 114.50 EUR", "Head aega!"]:
     assert expected in transcript, expected
 header = {"version": 2, "width": 110, "height": 30, "timestamp": int(time.time()),
@@ -78,7 +78,7 @@ events.forEach((event,index)=>timers.push(setTimeout(()=>{
 terminal.textContent+=event[2].replaceAll('\\r',''); terminal.scrollTop=terminal.scrollHeight;
 if(index===events.length-1)status.textContent='Lõppenud';},event[0]*1000)));};
 </script></html>'''
-page = page.replace("TRANSCRIPT", html.escape(transcript)).replace(
+page = page.replace("TRANSCRIPT", html.escape(transcript.replace("\r\n", "\n"))).replace(
     "EVENTS", json.dumps(events, ensure_ascii=False).replace("<", "\\u003c"))
 (ROOT / "docs/kaivitustoend.html").write_text(page, encoding="utf-8")
 print("Salvestatud päris terminaliseanss: .cast, .html ja .txt")

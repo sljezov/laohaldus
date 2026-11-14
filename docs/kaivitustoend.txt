@@ -9,7 +9,7 @@ VÄIKESE POE LAOHALDUS
 Valik: 1
 Piim | hind: 1.25 EUR | kogus: 10 | toidukaup, parim enne: 2026-11-21
 Leib | hind: 2.10 EUR | kogus: 8 | toidukaup, parim enne: 2026-11-19
-Hiir | hind: 19.90 EUR | kogus: 3 | elektroonika, garantii: 24 kuud
+Klaviatuur | hind: 19.90 EUR | kogus: 3 | elektroonika, garantii: 24 kuud
 
 1 – Kõik tooted
 2 – Lisa toode
@@ -19,11 +19,11 @@ Hiir | hind: 19.90 EUR | kogus: 3 | elektroonika, garantii: 24 kuud
 0 – Välju
 Valik: 2
 Liik (1 – toit, 2 – elektroonika): 2
-Nimi: Klaviatuur
+Nimi: Kõlar
 Hind EUR: 25,50
 Kogus: 2
 Garantii kuudes: 24
-Toode lisatud: Klaviatuur | hind: 25.50 EUR | kogus: 2 | elektroonika, garantii: 24 kuud
+Toode lisatud: Kõlar | hind: 25.50 EUR | kogus: 2 | elektroonika, garantii: 24 kuud
 
 1 – Kõik tooted
 2 – Lisa toode
@@ -32,8 +32,8 @@ Toode lisatud: Klaviatuur | hind: 25.50 EUR | kogus: 2 | elektroonika, garantii:
 5 – Lao koguväärtus
 0 – Välju
 Valik: 4
-Otsingusõna: klav
-Klaviatuur | hind: 25.50 EUR | kogus: 2 | elektroonika, garantii: 24 kuud
+Otsingusõna: kõl
+Kõlar | hind: 25.50 EUR | kogus: 2 | elektroonika, garantii: 24 kuud
 
 1 – Kõik tooted
 2 – Lisa toode
@@ -51,7 +51,7 @@ Lao koguväärtus: 140.00 EUR
 5 – Lao koguväärtus
 0 – Välju
 Valik: 3
-Toote täpne nimi: Klaviatuur
+Toote täpne nimi: Kõlar
 Koguse muutus (nt 5 või -2): -1
 Kogus muudetud.
 

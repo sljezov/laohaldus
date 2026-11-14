@@ -95,7 +95,7 @@ automaatselt aegunud kauba eemaldamist.
 
 ## Kuidas lahendust ise muuta
 
-Näiteks muuda `Main`-i konstruktoris Hiire algkogus `3` asemel `5` ning käivita
+Näiteks muuda `Main`-i konstruktoris Klaviatuuri algkogus `3` asemel `5` ning käivita
 `./run.sh`. Vali `1`, et näha uut kogust, ja `5`, et kontrollida uut koguväärtust
 `128.80 EUR`. Seejärel taasta algkogus `3`; kaasasolevad integratsioonitestid
 eeldavad dokumenteeritud algandmeid.
@@ -114,7 +114,7 @@ pole selleks vaja muuta.
 | Koguse suurendamine ja vähendamine | Menüü 3, positiivne või negatiivne muutus |
 | Nime järgi otsimine | Menüü 4, nimeosa ja tõstutundetu otsing |
 | Lao koguväärtus | Menüü 5, hinna ja koguse korrutiste summa |
-| Vähemalt kolm toodet | Piim, Leib ja Hiir programmi alguses |
+| Vähemalt kolm toodet | Piim, Leib ja Klaviatuur programmi alguses |
 | Seotud klassid ja neli OOP põhimõtet | `Product`, alamklassid ja `Inventory`; selgitused eespool |
 | Andmestruktuur | `ArrayList`, lisamine, otsing ja läbimine; põhjendus eespool |
 | Vähemalt kolm sisulist commit'i | [Commit'ide loetelu](commitid.md) ja projekti Git-ajalugu |
