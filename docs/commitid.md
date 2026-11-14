@@ -8,14 +8,13 @@ Kolm sisulist arendusetappi loodi töö käigus, iga etapi järel kontrolliti ko
 | `0f97c58` | lisa laohaldus otsingu kogusemuudatuste ja testidega | Toimiv laohaldus ning edukalt läbitud laoloogika testid |
 | `722ccff` | lisa konsoolimenüü sisendikontroll ja käivitusskriptid | Töötav konsool ja edukalt läbitud integratsioonitestid |
 
-Neile järgneb eraldi dokumentatsiooni ja käivitustõendi commit pealkirjaga
-`lisa eestikeelne dokumentatsioon ja päris terminalisalvestus`.
-Selle commit'i räsi saab vaadata bundle'i kloonimise järel `git log --oneline` abil.
+Neile järgneb dokumentatsiooni ja käivitustõendi commit `f24d96a` pealkirjaga
+`lisa eestikeelne dokumentatsioon ja päris terminalisalvestus` ning juhendite
+uuendus pärast Git-ajaloo taastamist projektikausta.
 
-Kõik commit'ide teemad on väiketähtedega. Täielik ajalugu on projektiga kaasas
-failis `laohaldus.bundle`. Klooni see tavalises kirjutamisõigusega keskkonnas:
+Kõik commit'ide teemad on väiketähtedega. Täielik ajalugu asub projekti
+`.git`-kataloogis. Vaata seda projektikaustas:
 
 ```sh
-git clone laohaldus.bundle ../laohaldus-git
-git -C ../laohaldus-git log --oneline
+git log --oneline
 ```

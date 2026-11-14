@@ -64,21 +64,19 @@ Selle saab uuesti luua käsuga `python3 docs/record_demo.py` macOS-is või Linux
 | `src/ee/laohaldus/Main.java` | Konsoolimenüü, sisend ja väljund |
 | `test/` | Laoloogika ja konsooli testid |
 | [Lahenduse selgitus](docs/selgitus.md) | Tööpäevik, OOP näited, andmestruktuur ja nõuete vastavus |
-| [Commit'ide loetelu](docs/commitid.md) | Kolm sisulist arendusetappi ja ajaloo taastamine |
+| [Commit'ide loetelu](docs/commitid.md) | Sisulised arendusetapid ja Git-ajalugu |
 
 ## Git-ajalugu
 
-Projekti kõrvale on lisatud `laohaldus.bundle`, mis sisaldab päris Git-commit'e.
-Keskkond ei lubanud projektikausta `.git`-kataloogi kirjutada, mistõttu hoiti
-arendamise ajal Giti metaandmeid eraldi ajutises kaustas. Bundle säilitab ajaloo
-ka pärast ajutise kausta kadumist.
-
-Tavalise Git-repositooriumi saamiseks klooni bundle uude kausta:
+Projekt on tavaline Git-repositoorium. Kogu commit-ajalugu asub `.git`-kataloogis:
 
 ```sh
-git clone laohaldus.bundle ../laohaldus-git
-cd ../laohaldus-git
 git log --oneline
 ```
 
-Bundle ise ei kuulu commit'idesse, sest see on commit'ide transpordifail.
+GitHubi üleslaadimiseks loo tühi repositoorium ja lisa selle aadress:
+
+```sh
+git remote add origin https://github.com/SINU-KASUTAJA/laohaldus.git
+git push -u origin main
+```

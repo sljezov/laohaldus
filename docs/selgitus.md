@@ -6,7 +6,7 @@ Kõigepealt valmis abstraktne `Product` ning sellest pärinevad toidu- ja elektr
 Seejärel lisandus `Inventory`, mille lisamist, otsingut, koguste muutmist ja koguväärtust kontrolliti testidega.
 Kolmandas etapis valmis konsoolimenüü koos sisendikontrolliga ning testiti kasutaja tegevusi päris Java protsessis.
 Kõige rohkem tähelepanu nõudis vigase sisendi käsitlemine nii, et negatiivne laojääk, liiga täpne hind või vale kuupäev ei muudaks laoseisu.
-Lõpuks salvestati töötava rakenduse näidisseanss ja koostati dokumentatsioon ning Git-ajaloo bundle.
+Lõpuks salvestati töötava rakenduse näidisseanss, koostati dokumentatsioon ja taastati ajutiselt eraldi hoitud Git-ajalugu projektikausta.
 
 See päevik kirjeldab siinse lahenduse valmimist. Isiklikul esitlusel tasub selgitused
 oma sõnadega läbi rääkida ja rakendust ise käivitada.
@@ -117,6 +117,6 @@ pole selleks vaja muuta.
 | Vähemalt kolm toodet | Piim, Leib ja Hiir programmi alguses |
 | Seotud klassid ja neli OOP põhimõtet | `Product`, alamklassid ja `Inventory`; selgitused eespool |
 | Andmestruktuur | `ArrayList`, lisamine, otsing ja läbimine; põhjendus eespool |
-| Vähemalt kolm sisulist commit'i | [Commit'ide loetelu](commitid.md) ja kaasasolev bundle |
+| Vähemalt kolm sisulist commit'i | [Commit'ide loetelu](commitid.md) ja projekti Git-ajalugu |
 | Tööpäevik ja koodi selgitus | Käesolev dokument |
 | Töötamise salvestus | [Esitatav salvestus](kaivitustoend.html), lisamine, otsing ja koguväärtus |
